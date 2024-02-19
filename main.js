@@ -85,10 +85,12 @@ const animate = () => {
 
 const checkQuestion = () => {
 	if(input.value.includes('?')) {
-		animate()
-		playSound()
 		setTimeout(() => {
-            giveAnswer()
+			playSound()
+        }, 1000);
+		animate()
+		setTimeout(() => {
+			giveAnswer()
         }, 1000);
 		if(error.textContent !== ''){
 			error.textContent = ''
