@@ -76,6 +76,7 @@ const clearAll = () => {
 
 const animate = () => {
 		ball.classList.add('shake-animation')
+		playSound()
 		setTimeout(() => {
             ball.classList.remove('shake-animation')
         }, 1000);
@@ -85,7 +86,6 @@ const animate = () => {
 
 const checkQuestion = () => {
 	if(input.value.includes('?')) {
-		playSound()
 		animate()
 		setTimeout(() => {
 			giveAnswer()
