@@ -1,0 +1,142 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+} */
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%);
+}
+
+.wrapper {
+	position: relative;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	width: 1000px;
+	height: 600px;
+	background-color: #fff;
+	border-radius: 20px;
+}
+
+.info {
+	text-align: center;
+	font-size: 20px;
+}
+
+.info h1 {
+	margin-bottom: 10px;
+	font-family: 'Protest Revolution', sans-serif;
+	font-size: 60px;
+}
+
+.ball-img {
+	position: relative;
+	height: 250px;
+}
+
+.ball-img img {
+	position: absolute;
+	top: 30px;
+	left: 300px;
+	width: 300px;
+	cursor: pointer;
+}
+
+.question-area {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 24px;
+}
+
+.question-area h2 {
+	margin-bottom: 10px;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.input-area {
+	position: absolute;
+	bottom: 130px;
+	right: 150px;
+	display: flex;
+	width: 60%;
+}
+
+.input-area input {
+	padding: 10px 20px;
+	font-size: 20px;
+	width: 80%;
+	background-color: rgba(220,220,220, .5);
+	border: 2px solid black;
+	border-radius: 8px;
+}
+
+.input-area button {
+	margin-left: 15px;
+	padding: 6px 20px;
+	font-size: 16px;
+	background-color:rgba(135,206,235, .5);
+	border-radius: 8px;
+	border: 2px solid black;
+	cursor: pointer;
+	transition: background-color .3s;
+}
+
+.input-area button:hover {
+	background-color: rgba(80, 133, 155, 0.5);
+}
+
+.question-area .answer {
+	position: absolute;
+	bottom: 80px;
+	margin-top: 30px;
+}
+
+.question-area .answer span {
+	font-weight: bold;
+}
+
+.question-area .error {
+	position: absolute;
+	bottom: 80px;
+	font-weight: bold;
+	color: #3add8c;
+}
+
+.shake-animation {
+	animation: shake 1s 1;
+}
+
+@keyframes shake {
+	0% {
+		left: 290px;
+	}
+	20% {
+		left: 340px;
+	}
+	40% {
+		left: 290px;
+	}
+	60% {
+		left: 340px;
+	}
+	80% {
+		left: 290px;
+	}
+	100% {
+		left: 300px;
+	}
+}
