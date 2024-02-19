@@ -88,8 +88,8 @@ const checkQuestion = () => {
 		animate()
 		setTimeout(() => {
             giveAnswer()
-			playSound()
         }, 1000);
+		playSound()
 		if(error.textContent !== ''){
 			error.textContent = ''
 		}
